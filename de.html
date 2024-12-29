@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="contain">
+        <div id="Alert_Output">
+            <p id="ot"></p>
+            <button onclick="close_alert()">Close</button>
+        </div>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link" href="enc.html">Incrypt</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Decrypt</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Back</a>
+            </li>
+        </ul>
+        <div class="container-lg">
+            <form class="form">
+                <div class="mb-3">
+                  <label for="inputtext" class="form-label">Plain Text : </label>
+                  <input type="text" class="form-control" id="textz">
+                </div>
+                <div class="mb-3">
+                  <label for="inputnumber" class="form-label">Shift : </label>
+                  <input type="number" class="form-control" id="shif">
+                </div>
+                <div class="mb-3">
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <div class="container text-center">
+                            <div class="row">
+                              <label for="inputnumber" class="form-label">Output : </label>
+                              <div class="col-11">
+                                
+                                <input id="outpute" value="" class="field left" readonly="readonly"></input>
+                              </div>
+                              <div class="col-1">
+                                <lord-icon type="button" id="copyt"
+                                    src="https://cdn.lordicon.com/krmtxpdf.json"
+                                    trigger="hover"
+                                    style="width:100%;height:100%">
+                                </lord-icon>
+                              </div>
+                            </div>
+                        </div>
+                       
+                    </div>  
+                </div>
+                
+            </form>
+            
+            <button onclick="dencrypt()">Incrypt</button>
+        </div>
+    </div>
+<script src="js.js"> </script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
